@@ -88,6 +88,7 @@ document.getElementById('calculate-total').addEventListener('click', function(){
     
     totalCostElement.innerText = totalCost;
 
-    
+    coachCostField.value = '';
+    managerCostField.value = '';
 
 })
