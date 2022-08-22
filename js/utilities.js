@@ -13,4 +13,7 @@ function getNameList(playerName){
     if(placesOl.getElementsByTagName('li').length <= 4){
        return placesOl.appendChild(li)
     }
+    else{
+        alert('You are not eligible for add more than five players')
+    }
 }
