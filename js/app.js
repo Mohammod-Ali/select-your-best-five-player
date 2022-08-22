@@ -56,7 +56,6 @@ document.getElementById('calculate-player').addEventListener('click', function()
     const placesOl = document.querySelector('#list-container ol')
 
     const playerTotalCost = playerCost * placesOl.getElementsByTagName('li').length;
-    console.log(playerTotalCost)
 
     playerExpensesElement.innerText = playerTotalCost
     
