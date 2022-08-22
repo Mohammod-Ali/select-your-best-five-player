@@ -79,6 +79,15 @@ document.getElementById('calculate-total').addEventListener('click', function(){
     // coach cost
     const coachCostField = document.getElementById('coach-cost');
     const coachCostString = coachCostField.value;
-    cosnt  coachCost = parseInt(coachCostString);
+    const coachCost = parseInt(coachCostString);
+
+    // total cost
+    const totalCostElement = document.getElementById('total-Cost');
+
+    const totalCost = playerExpenses + managerCost + coachCost;
+    
+    totalCostElement.innerText = totalCost;
+
+    
 
 })
