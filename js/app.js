@@ -44,6 +44,7 @@ document.getElementById('btn-renato').addEventListener('click', function(){
 })
 
 // Budget section start here
+// calculate player cost
 
 document.getElementById('calculate-player').addEventListener('click', function(){
     const playerCostField = document.getElementById('player-cost');
@@ -51,7 +52,6 @@ document.getElementById('calculate-player').addEventListener('click', function()
     const playerCost = parseInt(playerCostString)
 
     const playerExpensesElement = document.getElementById('player-expenses');
-    const playerExpensesText = playerExpensesElement.innerText;
 
     const placesOl = document.querySelector('#list-container ol')
 
@@ -61,4 +61,24 @@ document.getElementById('calculate-player').addEventListener('click', function()
     playerExpensesElement.innerText = playerTotalCost
     
     playerCostField.value = '';
+})
+
+// calculate total cost
+
+document.getElementById('calculate-total').addEventListener('click', function(){
+    // player expenses
+    const playerExpensesElement = document.getElementById('player-expenses');
+    const playerExpensesString =  playerExpensesElement.innerText; 
+    const playerExpenses = parseInt(playerExpensesString)
+
+    // manager cost
+    const managerCostField = document.getElementById('manager-cost');
+    const managerCostString = managerCostField.value;
+    const managerCost = parseInt(managerCostString)
+
+    // coach cost
+    const coachCostField = document.getElementById('coach-cost');
+    const coachCostString = coachCostField.value;
+    cosnt  coachCost = parseInt(coachCostString);
+
 })
